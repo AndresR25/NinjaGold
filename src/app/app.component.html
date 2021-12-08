@@ -1,0 +1,35 @@
+<div>
+  <div>
+    <h2 >Your Gold: {{gold}} </h2>
+    <a href="/reset"><h1 >Ninja Gold</h1></a>
+  </div>
+  <div >
+    <div >
+      <h2 >Farm</h2>
+     
+      <h3 >(earns 2-5 gold)</h3>
+      <button  (click)='farm()'>Find Gold!</button>
+    </div>  
+    <div>
+      <h2 >Cave</h2>
+      
+      <h3 >(earns 5-10 gold)</h3>
+      <button (click)='cave()'>Find Gold!</button>
+    </div>
+    <div >
+      <h2 >House</h2>
+     
+      <h3 >(earns 7-15 gold)</h3>
+      <button (click)='house()'>Find Gold!</button>
+    </div>
+    <div>
+      <h2 >Casino</h2>
+   
+      <h3 >(earns/takes 0-100 gold)</h3>
+      <button  (click)='casino()'>Find Gold!</button>
+    </div>
+  </div>
+  <div >
+      <p *ngFor="let log of adventureLog.reverse()">{{log}}</p>
+  </div>
+</div>
